@@ -2,7 +2,7 @@ body {
     margin:0;
     padding: 0;
     font: 14px "Century Gothic", Futura, sans-serif;
-    background-color:#cecece;
+    background-color:#8b8b8b;
 }
 
 .title {
@@ -13,8 +13,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    color: #333;
-    background-color: #ebf9fa;
+    color: rgb(0, 0, 0);
+    background-color: #cecece;
     text-align: left
 }
 
@@ -39,7 +39,7 @@ body {
 .sectionContent1 {
     border-radius: 5px;
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
-    background-color: #ebf9fa;
+    background-color: #cecece;
     margin: 1% 25%;
     padding: 5px 12px;
     text-align: left;
@@ -55,11 +55,15 @@ body {
 }
 
 .avatar {
+    border: solid;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: #333;;
     display: block;
     margin-left: auto;
     width: 10vw;
     margin-right: auto;
-    border-radius: 50%;
+    
 }
 
 .container {
@@ -69,8 +73,10 @@ body {
 @keyframes transitionIn {
     from {
         opacity: 0;
+        transform: translateY(75px);
     }
     to {
         opacity: 1;
+        transform: translateY(0px);
     }
 }
