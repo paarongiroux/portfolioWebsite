@@ -4,6 +4,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './home.js';
 import About from './about.js';
 import Projects from './Projects.js';
+import Contact from './Contact.js';
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Route exact path='/' component={Home}></Route>
             <Route exact path='/about' component={About}></Route>
             <Route exact path='/projects' component={Projects}></Route>
+            <Route exact path='/contact' component={Contact}></Route>
         </Switch>
     </BrowserRouter>
     

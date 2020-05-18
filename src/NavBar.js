@@ -10,7 +10,7 @@ class NavBar extends React.Component {
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><a hred="#home">Contact</a></li>
+                    <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><a href="http://linkedin.com/in/pagiroux"><i class="fa fa-linkedin"></i></a></li>

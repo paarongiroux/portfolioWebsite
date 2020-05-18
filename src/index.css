@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     color: #333;
-    background-color: #fff7e7;
+    background-color: #ebf9fa;
     text-align: left
 }
 
@@ -39,7 +39,7 @@ body {
 .sectionContent1 {
     border-radius: 25px;
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
-    background-color: #fff7e7;
+    background-color: #ebf9fa;
     margin: 1% 25%;
     padding: 5px 12px;
     text-align: left;
