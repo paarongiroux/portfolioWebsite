@@ -5,7 +5,7 @@ import NavBar from './NavBar.js';
 class Contact extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 < NavBar />
                 Just send me an email fool.
             </div> 

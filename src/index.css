@@ -6,7 +6,7 @@ body {
 }
 
 .title {
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
     margin: 1% 25%;
     padding: 5px 12px;
@@ -19,7 +19,7 @@ body {
 }
 
 .sectionContent0 {
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
     margin: 1% 25%;
     padding: 5px 12px;
@@ -37,7 +37,7 @@ body {
 }
 
 .sectionContent1 {
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
     background-color: #ebf9fa;
     margin: 1% 25%;
@@ -60,4 +60,17 @@ body {
     width: 10vw;
     margin-right: auto;
     border-radius: 50%;
+}
+
+.container {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

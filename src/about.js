@@ -5,7 +5,7 @@ import NavBar from './NavBar.js';
 class About extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 < NavBar />
                 about me xD
             </div> 

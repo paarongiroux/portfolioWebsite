@@ -5,12 +5,11 @@ import './index.css';
 import NavBar from './NavBar.js';
 import name from './res/name.png';
 import avi from './res/avi.jpg';
-import { Link } from "react-router-dom";
 
 class Home extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <NavBar />
                 <div className="title">
                     <img src = {avi} class = "avatar"></img>
