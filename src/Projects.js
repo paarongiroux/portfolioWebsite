@@ -2,15 +2,15 @@ import React from 'react';
 import './index.css';
 import NavBar from './NavBar.js';
 
-class About extends React.Component {
+class Projects extends React.Component {
     render() {
         return (
             <div>
                 < NavBar />
-                about me xD
+                here be me projects
             </div> 
         );
     }
 }
 
-export default About;
+export default Projects;
