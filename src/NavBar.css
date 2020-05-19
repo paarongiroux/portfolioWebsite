@@ -1,4 +1,4 @@
-ul {
+.navul {
     list-style-type: none;
     width: 100%;
     margin: 0;
@@ -7,7 +7,7 @@ ul {
     background-color: #333;
   }
   
-li {
+.navli {
     float: left;
 }
   
@@ -26,6 +26,5 @@ li a:hover {
 .padded {
     margin: 0px 0%;
     padding: 0px 25%;
-    /* box-shadow: -3px 0px 0px 0px rgb(85, 85, 85), 3px 0px 0px 0px rgb(85, 85, 85); */
     background-color: #333;
 }

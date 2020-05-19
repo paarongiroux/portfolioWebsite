@@ -26,6 +26,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -49,3 +50,4 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: rgb(8, 8, 8);
 }
+
