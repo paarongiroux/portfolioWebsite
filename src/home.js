@@ -19,7 +19,7 @@ class Home extends React.Component {
                     </div>
                     <div className="sectionContent0">
                     <div className="sectionTitle">
-                        Overview:
+                        Hi Timmy:
                     </div>
                         Lorem ipsum dolor sit amet, quas omnis gubergren qui ex, euismod corpora consequat eam id. 
                         Eum utinam epicuri platonem et, ad mea dolor probatus. His menandri incorrupte at, 
