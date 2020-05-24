@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(40, 44, 80);
   }
   
 .navli {
@@ -20,11 +20,11 @@ li a {
 }
   
 li a:hover {
-    background-color: #111;
+    background-color: rgb(28, 31, 56);
 }
 
 .padded {
     margin: 0px 0%;
     padding: 0px 25%;
-    background-color: #333;
+    background-color: rgb(40, 44, 80);
 }
