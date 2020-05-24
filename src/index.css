@@ -6,22 +6,22 @@ body {
 }
 
 .title {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
-    margin: 1% 25%;
+    margin: 0% 25%;
     padding: 5px 12px;
     height: 100%;
     top: 0;
     left: 0;
     color: rgb(0, 0, 0);
-    background-color: #cecece;
+    background-color: #fdfdfd;
     text-align: left
 }
 
 .sectionContent0 {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
-    margin: 1% 25%;
+    margin: 0% 25%;
     padding: 5px 12px;
     text-align: left;
     font-size: 14px;
@@ -37,10 +37,10 @@ body {
 }
 
 .sectionContent1 {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 3px 3px 3px 0px rgb(85, 85, 85);
-    background-color: #cecece;
-    margin: 1% 25%;
+    background-color: #fdfdfd;
+    margin: 0% 25%;
     padding: 5px 12px;
     text-align: left;
     font-size: 14px;
@@ -85,4 +85,9 @@ body {
     font-style: italic;
     margin: 0;
     padding: 0;
+}
+
+.nau {
+    max-width:10%;
+    height:auto;
 }

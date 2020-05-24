@@ -65,8 +65,8 @@ class About extends React.Component {
                                 <li> pytest: 1 year experience </li>
                                 <li> Django: &lt; 1 year experience </li>
                                 <li> React: &lt; 1 year experience</li>
-                                <li> Jenkins CI: &lt; 1 years experience </li>
-                                <li> Docker: &lt; 1 years experience </li>
+                                <li> Jenkins CI: &lt; 1 year experience </li>
+                                <li> Docker: &lt; 1 year experience </li>
                             </ul>
                         </div>
                     </div>
