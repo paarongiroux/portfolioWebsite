@@ -6,8 +6,9 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
-                < NavBar />
-                <div className="container">
+                
+                <div className="pageContet">
+                    < NavBar />
                     here be me projects
                 </div> 
             </div>

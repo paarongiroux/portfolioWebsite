@@ -1,7 +1,7 @@
 .navul {
     list-style-type: none;
-    width: 100%;
-    margin: 0;
+    margin: 0% 0%;
+    max-width: 1000px;
     padding: 0;
     overflow: hidden;
     background-color: rgb(40, 44, 80);
@@ -25,6 +25,5 @@ li a:hover {
 
 .padded {
     margin: 0px 0%;
-    padding: 0px 25%;
     background-color: rgb(40, 44, 80);
 }

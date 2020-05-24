@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import './index.css';
 import NavBar from './NavBar.js';
@@ -12,52 +11,48 @@ class Home extends React.Component {
     render() {
         return (
             
-            <div>
-                <NavBar />
-                <div className="container">
-                    <div className="title">
-                        <img src = {avi} class = "avatar"></img>
-                        <img src={name} class = "centerImage"></img>
-                        <hr/>
-                    </div>
+            <div className="pageContent">
+                    <NavBar />
                     <div className="sectionContent0">
+                    
+                    <img src = {avi} class = "avatar"></img>
+                    <img src={name} class = "centerImage"></img>
+                    <hr/>
                     <div className="sectionTitle">
                         About Me:
                     </div>
-                    My name is Peter Aaron Giroux, but I usually go by my middle name, 
-                    Aaron. I am 22 years old and a recent graduate from Northern 
-                    Arizona University with a B.S. in Computer Science and a minor in Math. 
-                    During my time at NAU, I gained valuable knowledge of many of the 
-                    fundamentals of programming and software development. I also became 
-                    fluent in Python, Java, C and C++, as well as had the opportunity to 
-                    develop projects in other languages such as Kotlin, Dart, Scheme, and more.
-                    <br/><br/>
-                    From February 2019 to March 2020, I worked as a software developer 
-                    at the U.S. Geological Survey Astrogeology Science Center. Here, 
-                    I was able to apply the skills I had been learning at school while 
-                    contributing to open source software used by the planetary science 
-                    community. During my time at USGS, I would attend regular meetings 
-                    with the rest of the development team which allowed me to gain valuable 
-                    insights and experience to the entire development cycle of a 
-                    software project. I was also able to learn a lot about software 
-                    testing, and spent a lot of time writing tests in gtest for C++ and 
-                    pytest for Python. I was also able to spend time working with and 
-                    learning about many new technologies such as Jenkins CI, Docker and 
-                    Git LFS. In addition to the technical skills I picked up at USGS, 
-                    I was also able to learn a lot about areas that were foreign to me 
-                    such as astrogeology, sensor models, planetary data standards, 
-                    and a lot of the math that goes along with it.
-                    <br/><br/>
-                    Currently, I am looking for new opportunities that will allow me 
-                    to put my skills picked up at NAU and USGS to good use. I am seeking 
-                    a work environment that will challenge me to learn more skills, 
-                    as well as utilize my skillset that I have already built up. I am 
-                    confident that my technical abilities, as well as my desire to 
-                    learn new skills and technologies will make me an excellent developer 
-                    in the future.
-                    <hr/>
-                    </div>
-                    <div className="sectionContent1">
+                        My name is Peter Aaron Giroux, but I usually go by my middle name, 
+                        Aaron. I am 22 years old and a recent graduate from Northern 
+                        Arizona University with a B.S. in Computer Science and a minor in Math. 
+                        During my time at NAU, I gained valuable knowledge of many of the 
+                        fundamentals of programming and software development. I also became 
+                        fluent in Python, Java, C and C++, as well as had the opportunity to 
+                        develop projects in other languages such as Kotlin, Dart, Scheme, and more.
+                        <br/><br/>
+                        From February 2019 to March 2020, I worked as a software developer 
+                        at the U.S. Geological Survey Astrogeology Science Center. Here, 
+                        I was able to apply the skills I had been learning at school while 
+                        contributing to open source software used by the planetary science 
+                        community. During my time at USGS, I would attend regular meetings 
+                        with the rest of the development team which allowed me to gain valuable 
+                        insights and experience to the entire development cycle of a 
+                        software project. I was also able to learn a lot about software 
+                        testing, and spent a lot of time writing tests in gtest for C++ and 
+                        pytest for Python. I was also able to spend time working with and 
+                        learning about many new technologies such as Jenkins CI, Docker and 
+                        Git LFS. In addition to the technical skills I picked up at USGS, 
+                        I was also able to learn a lot about areas that were foreign to me 
+                        such as astrogeology, sensor models, planetary data standards, 
+                        and a lot of the math that goes along with it.
+                        <br/><br/>
+                        Currently, I am looking for new opportunities that will allow me 
+                        to put my skills picked up at NAU and USGS to good use. I am seeking 
+                        a work environment that will challenge me to learn more skills, 
+                        as well as utilize my skillset that I have already built up. I am 
+                        confident that my technical abilities, as well as my desire to 
+                        learn new skills and technologies will make me an excellent developer 
+                        in the future.
+                        <hr/>
                         <div className="sectionTitle"> Eductation </div>
                         <div>
                             <img src = {nauLogo} className = "nau"></img>
@@ -65,8 +60,6 @@ class Home extends React.Component {
                             May, 2020, 3.86 GPA
                             <hr/>
                         </div>
-                    </div>
-                    <div className="sectionContent0">
                         <div className="sectionTitle"> Work Experience </div>
                         <div>
                             <ul>
@@ -83,8 +76,6 @@ class Home extends React.Component {
                             </ul>
                             <hr/>
                         </div>
-                    </div>
-                    <div className="sectionContent1">
                         <div className="sectionTitle"> Tools and Technologies </div>
                         <div>
                             <ul>
@@ -103,8 +94,6 @@ class Home extends React.Component {
                             </ul>
                             <hr/>
                         </div>
-                    </div>
-                    <div className="sectionContent0">
                         <div className="sectionTitle"> Other Interests </div>
                         <div>
                             <ul>
@@ -114,8 +103,6 @@ class Home extends React.Component {
                             </ul>
                         </div>
                         <hr/>
-                    </div>
-                    <div className="sectionContent1">
                         <div className = "sectionTitle">
                             Contact Info:
                         </div>
@@ -129,7 +116,6 @@ class Home extends React.Component {
                         <br></br><br></br>
                     </div>
                 </div>
-            </div>
             
         );
     }
