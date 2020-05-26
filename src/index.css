@@ -12,30 +12,42 @@ body {
 }
 
 .sectionContent0 {
-    /* border-radius: 5px; */
     /* box-shadow: 3px 3px 3px 0px rgb(85, 85, 85); */
     margin: 0% 0%;
     max-width: 1000px;
-    padding: 5px 12px;
     text-align: left;
     font-size: 14px;
     color: #333;
-    background-color:#fdfdfd;
+    background-color:#f3f3f3;
+    display: inline-block
+}
+
+.sectionContent1 {
+    /* border-radius: 5px; */
+    /* box-shadow: 3px 3px 3px 0px rgb(85, 85, 85); */
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    background-color:#f3f3f3;
     display: inline-block
 }
 
 .sectionTitle {
     text-align: left;
-    text-decoration: underline;
-    font-size: 18px;
-    color: #333;
+    padding:3px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 157, 228);
 }
 
 .centerImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50vw;
 }
 
 .avatar {
@@ -51,7 +63,7 @@ body {
     
 }
 
-.container {
+.transitionContainer {
     animation: transitionIn 0.75s;
     margin: 0px;
     text-align: center;
@@ -78,3 +90,69 @@ body {
     max-width:10%;
     height:auto;
 }
+
+.headerTitle {
+    margin:0px;
+    height: 100vh;
+    background-color:hsl(221, 86%, 86%);
+    padding: 20vh 0;
+}
+
+.experienceCard {
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(222, 236, 248);
+    background-color:rgb(232, 241, 248);
+    margin: 1% 1%;
+    width: 100%;
+    padding: 5px 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+}
+
+.aboutGrid {
+    display: flex;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.projectsGrid {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.projectCard {
+    background-color:rgb(232, 241, 248);
+    flex:0 0 30%;
+    height: 20vh;
+    flex-grow: 1;
+    margin: 1% 1%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    position: relative;
+}
+
+.projectImage {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.projectTextBlock {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    background-color:rgba(0, 0, 0, 0.5);
+    font: 32px "Century Gothic", Futura, sans-serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
