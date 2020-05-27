@@ -129,7 +129,7 @@ body {
 .projectCard {
     background-color:rgb(232, 241, 248);
     flex:0 0 30%;
-    height: 20vh;
+    height: 30vh;
     flex-grow: 1;
     margin: 1% 1%;
     text-align: center;
@@ -148,10 +148,11 @@ body {
 
 .projectTextBlock {
     position: absolute;
-    bottom: 50%;
-    right: 30%;
+    top: 2%;
+    left: 2%;
     background-color:rgba(0, 0, 0, 0.5);
     font: 32px "Century Gothic", Futura, sans-serif;
+    text-align: left;
     color: white;
     padding-left: 20px;
     padding-right: 20px;

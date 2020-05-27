@@ -8,6 +8,11 @@ import kickflip from './res/kickflip.png';
 import dropparty from './res/dropparty.png';
 import rat from './res/rat.png';
 import anagram from './res/anagram.png';
+import instabot from './res/instabot.png';
+import simulator from './res/simulator.png';
+import ghost from './res/ghost.png';
+import trans from './res/trans.png';
+import chat from './res/chat.png';
 
 class Home extends React.Component {
     render() {
@@ -78,14 +83,15 @@ class Home extends React.Component {
                         <div className="sectionTitle"> Projects </div>
                         <div className="sectionContent1">
                         
+                        Here are a few projects that I'm proud of:
                         <div className = "projectsGrid">
                             <div className = "projectCard"> 
                                 <img src = {kickflip} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Kickflip</div> 
                             </div>
                             <div className = "projectCard">
-                                <img src = {dropparty} className="projectImage"></img> 
-                                <div className = "projectTextBlock">Drop Party</div> 
+                                <img src = {chat} className="projectImage"></img> 
+                                <div className = "projectTextBlock">Distributed Chat</div> 
                             </div>
                             <div className = "projectCard">
                                 <img src = {rat} className="projectImage"></img> 
@@ -95,12 +101,28 @@ class Home extends React.Component {
                                 <img src = {anagram} className="projectImage"></img> 
                                 <div className = "projectTextBlock">pyAnagram</div> 
                             </div>
-                            <div className = "projectCard"> Project 5 </div>
-                            <div className = "projectCard"> Project 6 </div>
-                            <div className = "projectCard"> Project 7 </div>
-                            <div className = "projectCard"> Project 8 </div>
-                            <div className = "projectCard"> Project 9 </div>
+                            <div className = "projectCard">
+                                <img src = {instabot} className="projectImage"></img> 
+                                <div className = "projectTextBlock">instabot</div> 
+                            </div>
+                            <div className = "projectCard">
+                                <img src = {simulator} className="projectImage"></img> 
+                                <div className = "projectTextBlock">OS simulator</div> 
+                            </div>
+                            <div className = "projectCard">
+                                <img src = {ghost} className="projectImage"></img> 
+                                <div className = "projectTextBlock">Ghost GB</div> 
+                            </div>
+                            <div className = "projectCard">
+                                <img src = {trans} className="projectImage"></img> 
+                                <div className = "projectTextBlock">Transaction Server</div> 
+                            </div>
+                            <div className = "projectCard">
+                                <img src = {dropparty} className="projectImage"></img> 
+                                <div className = "projectTextBlock">Drop Party</div> 
+                            </div>
                         </div>
+                            Check out my <a href="https://github.com/paarongiroux"> gitHub</a> for even more projects
                         </div>
 
 
