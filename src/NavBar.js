@@ -10,7 +10,8 @@ class NavBar extends React.Component {
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
                 <ul className = "navul">
                     <li className = "navli"><Link to="/">Home</Link></li>
-                    <li className = "navli"><Link to="/projects">Projects</Link></li>
+                    <li className = "navli"><a href="#about">About Me</a></li>
+                    <li className = "navli"><a href="#projects">Projects</a></li>
                     <li className = "navli"><Link to="/contact">Contact</Link></li>
                     <li className = "navli"><a href="http://linkedin.com/in/pagiroux"><i class="fa fa-linkedin"></i></a></li>
                     <li className = "navli"><a href="http://github.com/paarongiroux"><i class="fa fa-github"></i></a></li>

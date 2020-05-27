@@ -31,7 +31,7 @@ class Home extends React.Component {
                         </h3>
                     </div>
                     <div className="sectionContent0">
-                        <div className="sectionTitle">About Me:</div>
+                        <div className="sectionTitle" id="about">About Me:</div>
                         <div className="sectionContent1">
                         <div className="aboutGrid">
                         <div className="experienceCard">
@@ -80,7 +80,7 @@ class Home extends React.Component {
                         </div>
 
 
-                        <div className="sectionTitle"> Projects </div>
+                        <div className="sectionTitle" id="projects"> Projects </div>
                         <div className="sectionContent1">
                         
                         Here are a few projects that I'm proud of:
