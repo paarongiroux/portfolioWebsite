@@ -12,7 +12,7 @@ class NavBar extends React.Component {
                     <li className = "navli"><Link to="/">Home</Link></li>
                     <li className = "navli"><a href="#about">About Me</a></li>
                     <li className = "navli"><a href="#projects">Projects</a></li>
-                    <li className = "navli"><Link to="/contact">Contact</Link></li>
+                    <li className = "navli"><a href="#contact">Contact</a></li>
                     <li className = "navli"><a href="http://linkedin.com/in/pagiroux"><i class="fa fa-linkedin"></i></a></li>
                     <li className = "navli"><a href="http://github.com/paarongiroux"><i class="fa fa-github"></i></a></li>
                 </ul>

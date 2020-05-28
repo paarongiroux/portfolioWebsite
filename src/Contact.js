@@ -1,14 +1,11 @@
 import React from 'react';
 import './Contact.css';
-import NavBar from './NavBar.js';
 
 class Contact extends React.Component {
     render() {
         return (
             <div>
-                < NavBar />
                 <div className = "ctnr">
-                    <div className = "sectionTitle">Contact Me:</div>
                     <form action="/action_page.php">
                         <label>Name</label>
                         <input type="text"id="fname"name="firstname"placeholder="First & last name"/>

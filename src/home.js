@@ -1,7 +1,9 @@
 import React from 'react';
-
+import $ from "jquery";
 import './index.css';
 import NavBar from './NavBar.js';
+import Contact from './Contact.js';
+
 import name from './res/name.png';
 import avi from './res/avatar.jpg';
 import kickflip from './res/kickflip.png';
@@ -14,6 +16,7 @@ import ghost from './res/ghost.png';
 import trans from './res/trans.png';
 import chat from './res/chat.png';
 
+
 class Home extends React.Component {
     render() {
         return (
@@ -21,6 +24,7 @@ class Home extends React.Component {
             <div className="pageContent">
                     <NavBar/>
                 <div className="transitionContainer">
+                    <div className="fadeScroll">
                     <div className="headerTitle">
                         <img src = {avi} class = "avatar"></img>
                         <img src={name} class = "centerImage"></img>
@@ -30,7 +34,11 @@ class Home extends React.Component {
                         looking for new opportunites all throughout the country
                         </h3>
                     </div>
+                    </div>
+
                     <div className="sectionContent0">
+                        
+
                         <div className="sectionTitle" id="about">About Me:</div>
                         <div className="sectionContent1">
                         <div className="aboutGrid">
@@ -57,6 +65,7 @@ class Home extends React.Component {
                         </div>
                         </div>
                         </div>
+                        
                         
 
                         <div className="sectionTitle"> Tools and Technologies </div>
@@ -126,23 +135,23 @@ class Home extends React.Component {
                         </div>
 
 
-                        <div className = "sectionTitle"> Contact Info: </div>
+                        <div className = "sectionTitle" id="contact"> Contact Info: </div>
                         <div className="sectionContent1">
-                        phone: (602)-686-9169
-                        <br></br>
-                        e-mail: <a href='mailto:p.aaron.giroux@gmail.com'>p.aaron.giroux@gmail.com</a>
-                        <br></br>
-                        linkedIn: <a href='https://linkedin.com/in/pagiroux'>linkedin.com/in/pagiroux</a>
-                        <br></br>
-                        gitHub: <a href='https://github.com/paarongiroux'>github.com/paarongiroux</a>
-                        <br></br><br></br>
+                            <Contact/>
+                            phone: (602)-686-9169
+                            <br></br>
+                            e-mail: <a href='mailto:p.aaron.giroux@gmail.com'>p.aaron.giroux@gmail.com</a>
+                            <br></br>
+                            linkedIn: <a href='https://linkedin.com/in/pagiroux'>linkedin.com/in/pagiroux</a>
+                            <br></br>
+                            gitHub: <a href='https://github.com/paarongiroux'>github.com/paarongiroux</a>
+                            <br></br><br></br>
                         </div>
                     </div>
                 </div>
 
 
-                <div id="myModal" class="modal">
-                {/* <!-- Modal content --> */}
+                <div id="infoModal" class="modal">
                     <div class="modal-content">
                         <span class="close" onClick={closeMore}>&times;</span>
                         <p id="projectInfo">Some text in the Modal..</p>
@@ -171,7 +180,7 @@ function displayMore(projectName)
         "dropparty": "simple 2d java pixel game",
     };  
     var projectInfo = document.getElementById("projectInfo");
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("infoModal");
 
     projectInfo.innerHTML = dict[projectName];
     modal.style.display = "block";
@@ -181,15 +190,35 @@ function displayMore(projectName)
 
 function closeMore()
 {
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("infoModal");
     modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("infoModal");
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
+}
+
+$(function() {
+    var documentEl = $(document);
+    var fadeElem = $('.fadeScroll');
+
+    documentEl.on('scroll', function() {
+        var currScrollPos = documentEl.scrollTop();
+
+        fadeElem.each(function() {
+            var $this = $(this);
+            var elemOffsetTop = $this.offset().top;
+
+            if (currScrollPos > elemOffsetTop) {
+                $this.css('opacity', 1 - (currScrollPos - elemOffsetTop)/ 1000);
+            }
+        });
+    });
+});
+
+
 
 export default Home;
