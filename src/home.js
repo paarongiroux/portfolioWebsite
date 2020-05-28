@@ -85,39 +85,39 @@ class Home extends React.Component {
                         
                         Here are a few projects that I'm proud of:
                         <div className = "projectsGrid">
-                            <div className = "projectCard"> 
+                            <div className = "projectCard" onClick={() => displayMore("kickflip")}> 
                                 <img src = {kickflip} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Kickflip</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("dischat")}>
                                 <img src = {chat} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Distributed Chat</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("rat")}>
                                 <img src = {rat} className="projectImage"></img> 
                                 <div className = "projectTextBlock">R.A.T.</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("anagram")}>
                                 <img src = {anagram} className="projectImage"></img> 
                                 <div className = "projectTextBlock">pyAnagram</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("instabot")}>
                                 <img src = {instabot} className="projectImage"></img> 
                                 <div className = "projectTextBlock">instabot</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("sim")}>
                                 <img src = {simulator} className="projectImage"></img> 
                                 <div className = "projectTextBlock">OS simulator</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("ghost")}>
                                 <img src = {ghost} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Ghost GB</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("trans")}>
                                 <img src = {trans} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Transaction Server</div> 
                             </div>
-                            <div className = "projectCard">
+                            <div className = "projectCard" onClick={() => displayMore("dropparty")}>
                                 <img src = {dropparty} className="projectImage"></img> 
                                 <div className = "projectTextBlock">Drop Party</div> 
                             </div>
@@ -128,9 +128,9 @@ class Home extends React.Component {
 
                         <div className = "sectionTitle"> Contact Info: </div>
                         <div className="sectionContent1">
-                        e-mail: p.aaron.giroux@gmail.com
-                        <br></br>
                         phone: (602)-686-9169
+                        <br></br>
+                        e-mail: <a href='mailto:p.aaron.giroux@gmail.com'>p.aaron.giroux@gmail.com</a>
                         <br></br>
                         linkedIn: <a href='https://linkedin.com/in/pagiroux'>linkedin.com/in/pagiroux</a>
                         <br></br>
@@ -139,10 +139,57 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+
+
+                <div id="myModal" class="modal">
+                {/* <!-- Modal content --> */}
+                    <div class="modal-content">
+                        <span class="close" onClick={closeMore}>&times;</span>
+                        <p id="projectInfo">Some text in the Modal..</p>
+                    </div>
+                </div>
+
+
             </div>
             
         );
     }
 }
+
+
+function displayMore(projectName)
+{
+    var dict = {
+        "kickflip": "visual game in java",
+        "dischat":"distributed chat system using ring topology",
+        "rat": "capstone project, build a navigation module for a thirty gallon robot",
+        "anagram": "simple anagram solving algorithm written in python",
+        "instabot": "python instagram bot. uses selenium to grab an image from google, generates a random caption and posts on instagram @binchutle",
+        "sim": "Operating system simulator written in C. includes memory management, I/O and processor jobs, as well as seven different CPU scheduling options",
+        "ghost": "gameboy platformer game written in C using the gbdk library. runs on any gameboy emulator.",
+        "trans": "distributed transaction server written in java using java.net library",
+        "dropparty": "simple 2d java pixel game",
+    };  
+    var projectInfo = document.getElementById("projectInfo");
+    var modal = document.getElementById("myModal");
+
+    projectInfo.innerHTML = dict[projectName];
+    modal.style.display = "block";
+    
+
+}
+
+function closeMore()
+{
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 export default Home;
