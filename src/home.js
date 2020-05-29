@@ -22,7 +22,8 @@ class Home extends React.Component {
         return (
             
             <div className="pageContent">
-                    <NavBar/>
+                <NavBar/> 
+                    
                 <div className="transitionContainer">
                     <div className="fadeScroll">
                     <div className="headerTitle">
@@ -41,6 +42,7 @@ class Home extends React.Component {
 
                         <div className="sectionTitle" id="about">About Me:</div>
                         <div className="sectionContent1">
+                            <p>I love using my skills to create epic win shit</p>
                         <div className="aboutGrid">
                         <div className="experienceCard">
                             <h4>Eductation:</h4>
@@ -92,7 +94,7 @@ class Home extends React.Component {
                         <div className="sectionTitle" id="projects"> Projects </div>
                         <div className="sectionContent1">
                         
-                        Here are a few projects that I'm proud of:
+                        <p>Here are a few projects that I'm proud of:</p>
                         <div className = "projectsGrid">
                             <div className = "projectCard" onClick={() => displayMore("kickflip")}> 
                                 <img src = {kickflip} className="projectImage"></img> 
@@ -131,21 +133,25 @@ class Home extends React.Component {
                                 <div className = "projectTextBlock">Drop Party</div> 
                             </div>
                         </div>
-                            Check out my <a href="https://github.com/paarongiroux"> gitHub</a> for even more projects
+                           <p>Check out my <a href="https://github.com/paarongiroux"> gitHub</a> for even more projects </p>
                         </div>
 
 
                         <div className = "sectionTitle" id="contact"> Contact Info: </div>
                         <div className="sectionContent1">
+                            <p> I am always looking for new connections and opportunities. Feel free to reach out to me for any questions or collaboration opportunites.</p>
                             <Contact/>
-                            phone: (602)-686-9169
-                            <br></br>
-                            e-mail: <a href='mailto:p.aaron.giroux@gmail.com'>p.aaron.giroux@gmail.com</a>
-                            <br></br>
-                            linkedIn: <a href='https://linkedin.com/in/pagiroux'>linkedin.com/in/pagiroux</a>
-                            <br></br>
-                            gitHub: <a href='https://github.com/paarongiroux'>github.com/paarongiroux</a>
-                            <br></br><br></br>
+                            <p class = "center">
+                                <i class="fa fa-phone" aria-hidden="true"></i> (602)-686-9169
+                                <br></br>
+                                <i class="fa fa-envelope"></i> <a href='mailto:p.aaron.giroux@gmail.com'>p.aaron.giroux@gmail.com</a>
+                                <br></br>
+                                <i class="fa fa-linkedin"></i> <a href='https://linkedin.com/in/pagiroux'>linkedin.com/in/pagiroux</a>
+                                <br></br>
+                                <i class="fa fa-github"></i> <a href='https://github.com/paarongiroux'>github.com/paarongiroux</a>
+                                <br></br><br></br>
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
@@ -154,7 +160,7 @@ class Home extends React.Component {
                 <div id="infoModal" class="modal">
                     <div class="modal-content">
                         <span class="close" onClick={closeMore}>&times;</span>
-                        <p id="projectInfo">Some text in the Modal..</p>
+                        <p id="projectInfo"></p>
                     </div>
                 </div>
 
@@ -169,15 +175,15 @@ class Home extends React.Component {
 function displayMore(projectName)
 {
     var dict = {
-        "kickflip": "visual game in java",
-        "dischat":"distributed chat system using ring topology",
-        "rat": "capstone project, build a navigation module for a thirty gallon robot",
-        "anagram": "simple anagram solving algorithm written in python",
-        "instabot": "python instagram bot. uses selenium to grab an image from google, generates a random caption and posts on instagram @binchutle",
-        "sim": "Operating system simulator written in C. includes memory management, I/O and processor jobs, as well as seven different CPU scheduling options",
-        "ghost": "gameboy platformer game written in C using the gbdk library. runs on any gameboy emulator.",
-        "trans": "distributed transaction server written in java using java.net library",
-        "dropparty": "simple 2d java pixel game",
+        "kickflip": '<div class="modalTitle"> Kickflip</div> <div class="modalContent">2D pixel art game written in java using the JFrame library.</div>',
+        "dischat":'<div class="modalTitle"> Distributed Chat System </div> <div class="modalContent">Distributed peer-to-peer chat system using a ring topology. Written in java using the java.net library to handle all connections between chat nodes.</div>',
+        "rat": '<div class="modalTitle">  Robot Assisted Tours</div> <div class="modalContent">Senior capstone project Fall/Spring 2020. <br> Worked with a team of five to build a navigation module for a thirty gallon robot.</div>',
+        "anagram": '<div class="modalTitle"> pyAnagram </div> <div class="modalContent">Simple anagram solving algorithm written and developed by me in python</div>',
+        "instabot": '<div class="modalTitle"> Binchutle Instagram Bot </div> <div class="modalContent">Python bot that uses selenium to grab a random image from google, generates a random caption and posts on instagram. @binchutle</div>',
+        "sim": '<div class="modalTitle"> OS Simulator </div> <div class="modalContent">Operating system simulator written in C. Includes memory management, I/O and processor jobs, as well as seven different CPU scheduling options including various preemptive and not preemptive techniques.</div>',
+        "ghost": '<div class="modalTitle"> Ghost </div> <div class="modalContent">2D Platformer game written in C using the gbdk library. Capable of running on any gameboy emulator.</div>',
+        "trans": '<div class="modalTitle"> Distributed Transaction Server </div> <div class="modalContent">Distributed transaction server written in java using java.net library.</div>',
+        "dropparty": '<div class="modalTitle"> Drop Party </div> <div class="modalContent">2D pixel art game written in java using the JFrame library. Includes a main menu, high scores table and music.</div>'
     };  
     var projectInfo = document.getElementById("projectInfo");
     var modal = document.getElementById("infoModal");

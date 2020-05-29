@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding: 0;
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 16px "Century Gothic", Futura, sans-serif;
     background-color:#ffffff;
     text-align: center;
 }
@@ -29,7 +29,7 @@ body {
     padding-top: 10vh;
     padding-bottom:10vh;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     background-color:#f3f3f3;
     display: inline-block
@@ -54,7 +54,7 @@ body {
     border: solid;
     border-radius: 50%;
     border-width: 3px;
-    border-color: #333;;
+    border-color: #333;
     display: block;
     margin-left: auto;
     margin-top: 3px;
@@ -99,22 +99,25 @@ body {
 }
 
 .experienceCard {
+    flex:0 0 30%;
+    flex-grow: 1;
+    margin: 1% 1%;
     border-width:1px;
     border-style:solid;
     border-color:rgb(222, 236, 248);
     background-color:rgb(232, 241, 248);
-    margin: 1% 1%;
-    width: 100%;
     padding: 5px 12px;
     text-align: left;
     font-size: 14px;
     color: #333;
     display: inline-block;
+    position: relative;
 }
 
 .aboutGrid {
     display: flex;
-    grid-template-columns: auto auto;
+    flex-wrap:wrap;
+    justify-content:space-around;
     padding: 10px;
     text-align: center;
 }
@@ -204,4 +207,25 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .modalTitle {
+    color: #333;
+    font-size: 28px;
+    margin: 0 0;
+    padding: 0 7%;
+    text-align: left;
+  }
+  .modalContent {
+      padding: 0% 10%;
+      font-size: 16px;
+      text-align: left;
+  }
+
+  p {
+      padding: 0% 3%;
+  }
+
+  p.center {
+      text-align: center;
   }
