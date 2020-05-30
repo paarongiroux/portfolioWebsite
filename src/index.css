@@ -106,7 +106,6 @@ body {
     border-style:solid;
     border-color:rgb(222, 236, 248);
     background-color:rgb(232, 241, 248);
-    padding: 5px 12px;
     text-align: left;
     font-size: 14px;
     color: #333;
@@ -119,19 +118,6 @@ body {
       flex: 50%;
     }
   }
-  
-  
-
-/* background-color:rgb(232, 241, 248);
-    flex:0 0 30%;
-    height: 30vh;
-    flex-grow: 1;
-    margin: 1% 1%;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-    display: inline-block;
-    position: relative; */
 
 .aboutGrid {
     display: flex;
@@ -248,3 +234,48 @@ body {
   p.center {
       text-align: center;
   }
+  
+  h4 {
+      margin: 0 0;
+      background-color: aquamarine;
+      font-size: 20px;
+      padding: 5px 0px 5px 0px;
+      width: 100%;
+  }
+
+  .bold {
+      font-weight:bold;
+  }
+
+  ul.openCircle{
+        list-style-type:circle;
+  }
+
+
+.toolsGrid {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.toolsCard {
+    background-color:rgb(232, 241, 248);
+    flex:0 0 20%;
+    height: 30vh;
+    flex-grow: 1;
+    margin: 1% 1%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    position: relative;
+}
+
+.toolsImage {
+    max-height: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+    filter: brightness(70%);
+}
+  

@@ -39,33 +39,58 @@ class Home extends React.Component {
 
                     <div className="sectionContent0">
                         
-
+            
                         <div className="sectionTitle" id="about">About Me:</div>
                         <div className="sectionContent1">
-                            <p>I love using my skills to create epic win shit</p>
+                            <p>
+                                My name is Peter Aaron Giroux, but I ususally go by Aaron. 
+                                I am a recent graduate from Northern Arizona University with 
+                                about 1 year of experience developing software at the U.S. 
+                                Geological Survey. I love using math and computer science to 
+                                solve complex problems, explore new technologies or just have 
+                                fun and experiment with things.
+                            </p>
+                            <p>
+                                Take a look around the rest of the site to learn more about 
+                                me and some of the projects that I've worked on!
+                            </p>
                         <div className="aboutGrid">
                         <div className="experienceCard">
-                            <h4>Eductation:</h4>
-                            Northern Arizona University
-                            <br/>
-                            Bachelor of Science in Computer Science
-                            <br/>
-                            Minor in Mathematics
-                            <br/>
-                            Magna Cum Laude
+                            <h4> &nbsp; Eductation:</h4>
+                            <p>
+                                <span className="bold">Northern Arizona University</span>
+                                <br/>Aug. 2016 - May 2020
+                                    <ul className="openCircle">
+                                        <li>B.S. Computer Science</li>
+                                        <li>Minor in Mathematics</li>
+                                        <li>Magna Cum Laude</li>
+                                    </ul>
+                            </p>
+                            
                         </div>
                         <div className="experienceCard">
-                            <h4>Work Experience:</h4>
-                            U.S. Geological Survey - Flagstff, AZ
-                            <br/>
-                            Software Developer - Feb. 2019 - Mar. 2020
-                            <br/>
-                            Contributed to open source projecs such 
-                            as <a href="https://github.com/USGS-Astrogeology/ISIS3">ISIS3</a> and <a href="https://github.com/USGS-Astrogeology/ale">ALE</a>
-                            <br/>
-                            Includes software testing, Python and C++ development, (continue developing this part)
+                            <h4> &nbsp; Work Experience:</h4>
+                            <p>
+                                <span className="bold">U.S. Geological Survey - Flagstff, AZ</span>
+                                <br/>Software Developer Feb. 2019 - Mar. 2020
+                                <ul className="openCircle">
+                                    <li>
+                                        Contributed to open source projecs such as <a href="https://github.com/USGS-Astrogeology/ISIS3">ISIS3</a> and <a href="https://github.com/USGS-Astrogeology/ale">ALE</a>
+                                    </li>
+                                    <li>
+                                        Transformed unit testing to a more modern approach
+                                    </li>
+                                    <li>
+                                        Some DevOps work including work with JenkinsCI, Docker and GitLFS
+                                    </li>
+                                    <li>
+                                        Analyzed and processed large planetary data sets
+                                    </li>
+                                </ul>
+                            </p>
                         </div>
                         </div>
+                        
                         </div>
                         
                         
@@ -73,7 +98,7 @@ class Home extends React.Component {
                         <div className="sectionTitle"> Tools and Technologies </div>
                         <div className="sectionContent1">
                         <div>
-                            <ul>
+                            <ul className="openCircle">
                                 <li> Python: 4+ years experience </li>
                                 <li> Java: 4+ years experience </li>
                                 <li> C: 3+ years experience    </li>

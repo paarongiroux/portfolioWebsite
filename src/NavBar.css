@@ -10,9 +10,10 @@
   
 .navli {
     float: left;
+    
 }
   
-li a {
+.navli a {
     display: block;
     color: white;
     text-align: center;
