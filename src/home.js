@@ -15,7 +15,21 @@ import simulator from './res/simulator.png';
 import ghost from './res/ghost.png';
 import trans from './res/trans.png';
 import chat from './res/chat.png';
-
+import python from './res/python.png';
+import java from './res/java.png';
+import c from './res/c.png';
+import cpp from './res/C++.png';
+import git from './res/git.png';
+import github from './res/github.png';
+import cmake from './res/cmake.png';
+import django from './res/django.png';
+import react from './res/react.png';
+import jenkins from './res/jenkins.png';
+import docker from './res/docker.png';
+import aws from './res/aws.png';
+import javascript from './res/javascript.png';
+import html from './res/html.png';
+import css from './res/css.png';
 
 class Home extends React.Component {
     render() {
@@ -97,21 +111,53 @@ class Home extends React.Component {
 
                         <div className="sectionTitle"> Tools and Technologies </div>
                         <div className="sectionContent1">
-                        <div>
-                            <ul className="openCircle">
-                                <li> Python: 4+ years experience </li>
-                                <li> Java: 4+ years experience </li>
-                                <li> C: 3+ years experience    </li>
-                                <li> C++: 2+ years experience   </li>
-                                <li> Git / GitHub: 2+ years experience</li>
-                                <li> CMake: 1 year experience</li>
-                                <li> gtest: 1 year experience</li>
-                                <li> pytest: 1 year experience </li>
-                                <li> Django: &lt; 1 year experience </li>
-                                <li> React: &lt; 1 year experience</li>
-                                <li> Jenkins CI: &lt; 1 year experience </li>
-                                <li> Docker: &lt; 1 year experience </li>
-                            </ul>
+                            <p> Some of the languages and tools that I'm experienced with: <br/><br/><br/></p>
+                        <div className="toolsGrid">
+                            <div className="toolsCard">
+                                <img src = {python} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {java} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {c} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {cpp} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {git} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {github} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {cmake} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {django} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {react} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {jenkins} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {docker} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {aws} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {javascript} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {html} className="toolsImage"></img>
+                            </div>
+                            <div className="toolsCard">
+                                <img src = {css} className="toolsImage"></img>
+                            </div>
                         </div>
                         </div>
 
