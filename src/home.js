@@ -59,7 +59,7 @@ class Home extends React.Component {
                             <p>
                                 My name is Peter Aaron Giroux, but I ususally go by Aaron. 
                                 I am a recent graduate from Northern Arizona University with 
-                                about 1 year of experience developing software at the U.S. 
+                                just over one year of experience developing software at the U.S. 
                                 Geological Survey. I love using math and computer science to 
                                 solve complex problems, explore new technologies or just have 
                                 fun and experiment with things.
@@ -103,8 +103,7 @@ class Home extends React.Component {
                                 </ul>
                             </p>
                         </div>
-                        </div>
-                        
+                        </div> 
                         </div>
                         
                         
@@ -210,8 +209,10 @@ class Home extends React.Component {
 
                         <div className = "sectionTitle" id="contact"> Contact Info: </div>
                         <div className="sectionContent1">
-                            <p> I am always looking for new connections and opportunities. Feel free to reach out to me for any questions or collaboration opportunites.</p>
-                            <Contact/>
+                            <p className="center"> I am always looking for new connections and opportunities. </p>
+                            <p className="center">Feel free to reach out to me for any questions or collaboration opportunites.</p>
+                            <br/>
+                            <br/>
                             <p class = "center">
                                 <i class="fa fa-phone" aria-hidden="true"></i> (602)-686-9169
                                 <br></br>
@@ -246,15 +247,15 @@ class Home extends React.Component {
 function displayMore(projectName)
 {
     var dict = {
-        "kickflip": '<div class="modalTitle"> Kickflip</div> <div class="modalContent">2D pixel art game written in java using the JFrame library.</div>',
-        "dischat":'<div class="modalTitle"> Distributed Chat System </div> <div class="modalContent">Distributed peer-to-peer chat system using a ring topology. Written in java using the java.net library to handle all connections between chat nodes.</div>',
-        "rat": '<div class="modalTitle">  Robot Assisted Tours</div> <div class="modalContent">Senior capstone project Fall/Spring 2020. <br> Worked with a team of five to build a navigation module for a thirty gallon robot.</div>',
-        "anagram": '<div class="modalTitle"> pyAnagram </div> <div class="modalContent">Simple anagram solving algorithm written and developed by me in python</div>',
-        "instabot": '<div class="modalTitle"> Binchutle Instagram Bot </div> <div class="modalContent">Python bot that uses selenium to grab a random image from google, generates a random caption and posts on instagram. @binchutle</div>',
+        "kickflip": '<div class="modalTitle"> Kickflip</div> <div class="modalContent">2D skate boarding pixel art game written in java using the JFrame library. <p class="modalIcon"> <a href="https://github.com/paarongiroux/kickflip"><i class="fa fa-github"></i> </a> </p></div>',
+        "dischat":'<div class="modalTitle"> Distributed Chat System </div> <div class="modalContent">Distributed peer-to-peer chat system using a ring topology. Written in java using the java.net library to handle all connections between chat nodes. <p class="modalIcon"> <a href="https://github.com/paarongiroux/DistributedChat"><i class="fa fa-github"></i> </a> </p> </div>',
+        "rat": '<div class="modalTitle">  Robot Assisted Tours</div> <div class="modalContent">Senior capstone project Fall/Spring 2020. <br> Worked with a team of five to build a navigation module for a thirty gallon robot. <p class="modalIcon"> <a href="https://www.youtube.com/watch?v=z8fE4ZqNNHg"><i class="fa fa-youtube-play"></i> </a> </p></div>',
+        "anagram": '<div class="modalTitle"> pyAnagram </div> <div class="modalContent">Simple anagram solving algorithm written and developed by me in python <p class="modalIcon"> <a href="https://github.com/paarongiroux/AnagramSolver"><i class="fa fa-github"></i> </a> </p></div>',
+        "instabot": '<div class="modalTitle"> Binchutle Instagram Bot </div> <div class="modalContent">Python bot that uses selenium to grab a random image from google, generates a random caption and posts on instagram. Check it out: <a href="https://www.instagram.com/binchutle/">@binchutle</a> <p class="modalIcon"> <a href="https://github.com/paarongiroux/RandomInstaBot"><i class="fa fa-github"></i> </a> </p> </div>',
         "sim": '<div class="modalTitle"> OS Simulator </div> <div class="modalContent">Operating system simulator written in C. Includes memory management, I/O and processor jobs, as well as seven different CPU scheduling options including various preemptive and not preemptive techniques.</div>',
-        "ghost": '<div class="modalTitle"> Ghost </div> <div class="modalContent">2D Platformer game written in C using the gbdk library. Capable of running on any gameboy emulator.</div>',
-        "trans": '<div class="modalTitle"> Distributed Transaction Server </div> <div class="modalContent">Distributed transaction server written in java using java.net library.</div>',
-        "dropparty": '<div class="modalTitle"> Drop Party </div> <div class="modalContent">2D pixel art game written in java using the JFrame library. Includes a main menu, high scores table and music.</div>'
+        "ghost": '<div class="modalTitle"> Ghost </div> <div class="modalContent">2D Platformer game written in C using the gbdk library. Capable of running on any gameboy emulator. <p class="modalIcon"> <a href="https://github.com/paarongiroux/ghostgame"><i class="fa fa-github"></i> </a> </p> </div>',
+        "trans": '<div class="modalTitle"> Distributed Transaction Server </div> <div class="modalContent">Distributed transaction server written in java using java.net library. <p class="modalIcon"> <a href="https://github.com/paarongiroux/TransactionServer"><i class="fa fa-github"></i> </a> </p> </div>',
+        "dropparty": '<div class="modalTitle"> Drop Party </div> <div class="modalContent">2D pixel art game written in java using the JFrame library. Includes a main menu, high scores table and music.  <p class="modalIcon"> <a href="https://www.youtube.com/watch?v=qHk6Ol-7aOk"><i class="fa fa-youtube-play"></i> </a> </p> </div>'
     };  
     var projectInfo = document.getElementById("projectInfo");
     var modal = document.getElementById("infoModal");

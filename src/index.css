@@ -278,4 +278,14 @@ body {
     object-fit: cover;
     vertical-align: bottom;
 }
+
+.modalIcon {
+    font-size: 30px;
+    text-align: center;
+}
+
+.modalIcon a {
+    text-decoration: none;
+    color: #333;
+}
   
